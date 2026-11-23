@@ -1,0 +1,59 @@
+name: Materialize images and enable Pages
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+jobs:
+  materialize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Decode image assets and commit
+        run: |
+          set -euo pipefail
+          mapfile -t files < <(find . -type f -name '*.b64' | sort)
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "No .b64 files to materialize"
+            exit 0
+          fi
+          for f in "${files[@]}"; do
+            out="${f%.b64}"
+            mkdir -p "$(dirname "$out")"
+            base64 -d "$f" > "$out"
+            rm -f "$f"
+            echo "decoded $out"
+          done
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Add site image assets"
+            git push
+          fi
+  enable-pages:
+    runs-on: ubuntu-latest
+    needs: materialize
+    steps:
+      - name: Enable GitHub Pages from main branch root with custom domain
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          gh api --method POST repos/${{ github.repository }}/pages \
+            --input - <<'JSON' && echo "Pages created" || echo "POST pages returned $?; may already exist"
+          {
+            "build_type": "legacy",
+            "source": {"branch": "main", "path": "/"}
+          }
+          JSON
+          gh api --method PUT repos/${{ github.repository }}/pages \
+            --input - <<'JSON'
+          {
+            "cname": "dadcorpshirts.com",
+            "source": {"branch": "main", "path": "/"}
+          }
+          JSON
+          gh api repos/${{ github.repository }}/pages
