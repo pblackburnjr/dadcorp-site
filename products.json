@@ -1,0 +1,122 @@
+[
+  {
+    "id": "bank-of-dad",
+    "title": "Bank of Dad - Pay Your Old Man Back T-Shirt",
+    "display_title": "Bank of Dad",
+    "price": "$29.99",
+    "tile": "assets/shirts/bank-of-dad.jpg",
+    "buy_url": "https://dadcorp.printify.me/product/34908665",
+    "shirt_tile": "assets/shirts/bank-of-dad.jpg",
+    "design_tile": "assets/designs/bank-of-dad.jpg",
+    "details": "S–3XL · 5 colors",
+    "color_count": 5
+  },
+  {
+    "id": "im-not-sleeping",
+    "title": "I'm Not Sleeping, I'm Watching TV - Dad Mode Activated T-Shirt",
+    "display_title": "I'm Not Sleeping",
+    "price": "$29.99",
+    "tile": "assets/shirts/im-not-sleeping.jpg",
+    "buy_url": "https://dadcorp.printify.me/product/34908583",
+    "shirt_tile": "assets/shirts/im-not-sleeping.jpg",
+    "design_tile": "assets/designs/im-not-sleeping.jpg",
+    "details": "S–3XL · 4 colors",
+    "color_count": 4
+  },
+  {
+    "id": "ask-your-mother",
+    "title": "Ask Your Mother - Dad's Customer Service Is Closed T-Shirt",
+    "display_title": "Ask Your Mother",
+    "price": "$29.99",
+    "tile": "assets/shirts/ask-your-mother.jpg",
+    "buy_url": "https://dadcorp.printify.me/product/34908636",
+    "shirt_tile": "assets/shirts/ask-your-mother.jpg",
+    "design_tile": "assets/designs/ask-your-mother.jpg",
+    "details": "S–3XL · 5 colors",
+    "color_count": 5
+  },
+  {
+    "id": "if-i-cant-fix-it",
+    "title": "If I Can't Fix It, It Was Already Broken T-Shirt",
+    "display_title": "If I Can't Fix It",
+    "price": "$29.99",
+    "tile": "assets/shirts/if-i-cant-fix-it.jpg",
+    "buy_url": "https://dadcorp.printify.me/product/34908657",
+    "shirt_tile": "assets/shirts/if-i-cant-fix-it.jpg",
+    "design_tile": "assets/designs/if-i-cant-fix-it.jpg",
+    "details": "S–3XL · 5 colors",
+    "color_count": 5
+  },
+  {
+    "id": "measure-once-cuss-twice",
+    "title": "Measure Once, Cuss Twice T-Shirt",
+    "display_title": "Measure Once, Cuss Twice",
+    "price": "$29.99",
+    "tile": "assets/shirts/measure-once-cuss-twice.jpg",
+    "buy_url": "https://dadcorp.printify.me/product/34908647",
+    "shirt_tile": "assets/shirts/measure-once-cuss-twice.jpg",
+    "design_tile": "assets/designs/measure-once-cuss-twice.jpg",
+    "details": "S–3XL · 5 colors",
+    "color_count": 5
+  },
+  {
+    "id": "rule-1",
+    "title": "Rule #1: Dad Is Always Right / Rule #2: See Mom T-Shirt",
+    "display_title": "Rule #1",
+    "price": "$29.99",
+    "tile": "assets/shirts/rule-1.jpg",
+    "buy_url": "https://dadcorp.printify.me/product/34908639",
+    "shirt_tile": "assets/shirts/rule-1.jpg",
+    "design_tile": "assets/designs/rule-1.jpg",
+    "details": "S–3XL · 5 colors",
+    "color_count": 5
+  },
+  {
+    "id": "detour",
+    "title": "Detour: Dad Knows a Shortcut (Adds 45 Minutes) T-Shirt",
+    "display_title": "Detour",
+    "price": "$29.99",
+    "tile": "assets/shirts/detour.jpg",
+    "buy_url": "https://dadcorp.printify.me/product/34908630",
+    "shirt_tile": "assets/shirts/detour.jpg",
+    "design_tile": "assets/designs/detour.jpg",
+    "details": "S–3XL · 5 colors",
+    "color_count": 5
+  },
+  {
+    "id": "unsubscribed",
+    "title": "Unsubscribed From Your Attitude, Signed Dad T-Shirt",
+    "display_title": "Unsubscribed",
+    "price": "$29.99",
+    "tile": "assets/shirts/unsubscribed.jpg",
+    "buy_url": "https://dadcorp.printify.me/product/34908624",
+    "shirt_tile": "assets/shirts/unsubscribed.jpg",
+    "design_tile": "assets/designs/unsubscribed.jpg",
+    "details": "S–3XL · 5 colors",
+    "color_count": 5
+  },
+  {
+    "id": "grandmas-house",
+    "title": "Grandma's House: Where Parents' Rules Don't Apply T-Shirt",
+    "display_title": "Grandma's House",
+    "price": "$29.99",
+    "tile": "assets/shirts/grandmas-house.jpg",
+    "buy_url": "https://dadcorp.printify.me/product/34908615",
+    "shirt_tile": "assets/shirts/grandmas-house.jpg",
+    "design_tile": "assets/designs/grandmas-house.jpg",
+    "details": "S–3XL · 5 colors",
+    "color_count": 5
+  },
+  {
+    "id": "gigi",
+    "title": "GiGi: Like Grandma, Only Cooler T-Shirt",
+    "display_title": "GiGi",
+    "price": "$29.99",
+    "tile": "assets/shirts/gigi.jpg",
+    "buy_url": "https://dadcorp.printify.me/product/34908606",
+    "shirt_tile": "assets/shirts/gigi.jpg",
+    "design_tile": "assets/designs/gigi.jpg",
+    "details": "S–3XL · 5 colors",
+    "color_count": 5
+  }
+]
