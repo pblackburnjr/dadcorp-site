@@ -1,6 +1,6 @@
 :root{--tan:#F3DBB9;--black:#1A1A1A;--orange:#B5541C;--cream:#F8EBD3}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:70px}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
 body{margin:0;background:var(--tan);color:var(--black);font-family:"Barlow Condensed",sans-serif;font-size:1.1rem;line-height:1.4}
 h1,h2,h3{font-family:Oswald,"Bebas Neue",sans-serif;text-transform:uppercase;margin:0}
 a{color:inherit}

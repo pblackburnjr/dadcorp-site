@@ -28,18 +28,12 @@ Not touched: announcement, hero, tagline, about, footer, Cloudflare snippet, pro
 Not visually tested in a browser (no browser run in this session); please check at 1280px and 390px, including the header row and the `#designs`/`#shirts`/`#hoodies`/`#hats`/`#about` deep links.
 
 
-## Pass 3 — Hats are real product tiles (not Coming Soon)
+## Pass 3 — Hats are live product tiles
 
-Patrick approved publishing the three hats (storefront publish is happening in a separate job). The Hats section is now regular product tiles with a HAT ribbon, title, details, and a Buy control, matching shirts/hoodies.
+Patrick approved publishing the three hats. The Hats section is now regular product tiles (HAT ribbon, title, price, details, Buy), in this order:
 
-Order and titles (as specified):
+1. **Bank of Dad 7-Panel Trucker Cap** — $32.99 — https://shop.dadcorpshirts.com/product/35007433 — Printify `6b05fb0443337059c707be17` — image `assets/hats/bank-of-dad-7-panel-trucker-cap.jpg` (storefront default front mockup, variant 251116 / camera 131159, white backdrop flood-filled to site tan `#F3DBB9` and sized 1200×1200).
+2. **Bank of Dad 7-Panel Camo Trucker Cap** — $34.99 — https://shop.dadcorpshirts.com/product/35007436 — Printify `6b05fb0343337059c707be16` — image `assets/hats/bank-of-dad-7-panel-camo-trucker-cap.jpg`. The storefront's preloaded default front mockup (variant 251134) is byte-identical to the 7-panel default — a known Fulfill Engine limitation; none of the official mockups show a camo pattern. The tile uses the next distinct storefront front mockup, variant 251135 / camera 135327, which is also this product's Open Graph image.
+3. **Bank of Dad Embroidered Trucker Cap** — $32.99 — https://shop.dadcorpshirts.com/product/35007441 — Printify `6b05fa9de50eaed6300383d6` — image `assets/hats/bank-of-dad-embroidered-trucker-cap.jpg` (storefront default front mockup, variant 118727 / camera 110130, same tan treatment).
 
-1. **Bank of Dad 7-Panel Trucker Cap** — `assets/hats/richardson-168-patch.jpg` — details: Richardson 168 — placeholder key: `Bank of Dad 7-Panel Trucker Cap`
-2. **7-Panel Camo Trucker Cap** — `assets/hats/richardson-168p-camo.jpg` — details: Richardson 168P · Camo — placeholder key: `7-Panel Camo Trucker Cap`
-3. **Embroidered Trucker Cap** — `assets/hats/richardson-112-embroidered.jpg` — details: Richardson 112 · Embroidered — placeholder key: `Embroidered Trucker Cap`
-
-Removed: the "Hats — Coming Soon." banner, Coming Soon pills, the Coming Soon tag on the category box, grayscale "soon" styling, and the SOON ribbon.
-
-**Buy URLs and prices are not filled in yet.** Checked shop.dadcorpshirts.com `/products` and the sitemap at about 6:46 PM ET on Nov 24, 2026: only the existing 10 shirts and 5 hoodies were listed; no hat product URLs. Each hat tile and Buy control has `data-href-placeholder` / `data-buy-placeholder` / `data-product-key` set to the exact title above so URLs can be dropped in later. Buy is `aria-disabled="true"` and does not navigate until an href is added. Prices are omitted on purpose (draft Printify retail was $32.99 / $34.99 for camo, but that is not confirmed as the live price).
-
-`products.json` hat records use `"status": "live_pending_url"` and `"buy_url": null` with the same placeholder keys.
+Removed: Coming Soon banner, pills, category-box tag, grayscale soon styling, SOON ribbon, and the title-keyed URL placeholders. Buy links and tile clicks go to the live product URLs above. Details lines (Richardson 168 / 168P · Camo / 112 · Embroidered) are unchanged facts.

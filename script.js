@@ -1,6 +1,5 @@
 (function () {
-  // Shirt, hoodie, and hat tiles: one mockup image, click goes to the shop when data-href is set.
-  // Hat buy URLs are not live yet; tiles use data-href-placeholder until those URLs are filled in.
+  // Shirt, hoodie, and hat tiles: one mockup image, click goes to the shop.
   document.querySelectorAll('.tile-img[data-href]').forEach(function (b) {
     b.addEventListener('click', function () {
       window.location.href = b.getAttribute('data-href');
@@ -29,7 +28,8 @@
 
   function update() {
     ticking = false;
-    var line = 140; // just below the sticky header
+    var header = document.querySelector(".site-header");
+    var line = (header ? header.getBoundingClientRect().bottom : 80) + 32;
     var id = null;
     if (about && about.getBoundingClientRect().top <= line) {
       id = 'about';
@@ -37,7 +37,6 @@
       sections.forEach(function (s, i) {
         if (s && s.getBoundingClientRect().top <= line) id = ids[i];
       });
-      // Boxes are on screen but no section has reached the top yet.
       if (!id && catalog && catalog.getBoundingClientRect().top < window.innerHeight * 0.6) id = 'designs';
     }
     setCurrent(id);
@@ -51,6 +50,5 @@
   window.addEventListener('resize', onScroll);
   window.addEventListener('hashchange', onScroll);
 
-  // #catalog should land on the category boxes (the section itself already does).
   update();
 })();

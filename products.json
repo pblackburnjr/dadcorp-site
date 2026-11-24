@@ -194,33 +194,36 @@
       "category": "hats",
       "title": "Bank of Dad 7-Panel Trucker Cap",
       "display_title": "Bank of Dad 7-Panel Trucker Cap",
-      "status": "live_pending_url",
-      "image": "assets/hats/richardson-168-patch.jpg",
+      "status": "live",
+      "price": "$32.99",
+      "image": "assets/hats/bank-of-dad-7-panel-trucker-cap.jpg",
       "details": "Richardson 168",
-      "buy_url": null,
-      "buy_url_placeholder_key": "Bank of Dad 7-Panel Trucker Cap"
+      "buy_url": "https://shop.dadcorpshirts.com/product/35007433",
+      "printify_product_id": "6b05fb0443337059c707be17"
     },
     {
       "id": "richardson-168p-camo",
       "category": "hats",
-      "title": "7-Panel Camo Trucker Cap",
-      "display_title": "7-Panel Camo Trucker Cap",
-      "status": "live_pending_url",
-      "image": "assets/hats/richardson-168p-camo.jpg",
+      "title": "Bank of Dad 7-Panel Camo Trucker Cap",
+      "display_title": "Bank of Dad 7-Panel Camo Trucker Cap",
+      "status": "live",
+      "price": "$34.99",
+      "image": "assets/hats/bank-of-dad-7-panel-camo-trucker-cap.jpg",
       "details": "Richardson 168P · Camo",
-      "buy_url": null,
-      "buy_url_placeholder_key": "7-Panel Camo Trucker Cap"
+      "buy_url": "https://shop.dadcorpshirts.com/product/35007436",
+      "printify_product_id": "6b05fb0343337059c707be16"
     },
     {
       "id": "richardson-112-embroidered",
       "category": "hats",
-      "title": "Embroidered Trucker Cap",
-      "display_title": "Embroidered Trucker Cap",
-      "status": "live_pending_url",
-      "image": "assets/hats/richardson-112-embroidered.jpg",
+      "title": "Bank of Dad Embroidered Trucker Cap",
+      "display_title": "Bank of Dad Embroidered Trucker Cap",
+      "status": "live",
+      "price": "$32.99",
+      "image": "assets/hats/bank-of-dad-embroidered-trucker-cap.jpg",
       "details": "Richardson 112 · Embroidered",
-      "buy_url": null,
-      "buy_url_placeholder_key": "Embroidered Trucker Cap"
+      "buy_url": "https://shop.dadcorpshirts.com/product/35007441",
+      "printify_product_id": "6b05fa9de50eaed6300383d6"
     }
   ]
 }
