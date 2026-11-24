@@ -1,0 +1,37 @@
+name: Materialize hat images
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  materialize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Decode hat images, remove helpers, and commit
+        run: |
+          set -euo pipefail
+          branch="${GITHUB_REF_NAME}"
+          if [ "$branch" != "category-tiles-redesign" ]; then
+            echo "Refusing to materialize on $branch"
+            exit 1
+          fi
+          mapfile -t files < <(find assets/hats -type f -name '*.b64' | sort)
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "No .b64 files to materialize"
+            exit 1
+          fi
+          for f in "${files[@]}"; do
+            out="${f%.b64}"
+            base64 -d "$f" > "$out"
+            rm -f "$f"
+            echo "decoded $out"
+          done
+          rm -f .github/workflows/materialize-hat-images.yml
+          rmdir .github/workflows 2>/dev/null || true
+          rmdir .github 2>/dev/null || true
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Add storefront hat mockup images"
+          git push origin HEAD:category-tiles-redesign
