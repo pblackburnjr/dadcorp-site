@@ -19,14 +19,14 @@ a{color:inherit}
 .btn:hover{background:#9a4515}
 .hero .btn{align-self:center}
 .tagline{background:var(--black);color:var(--cream);text-align:center;padding:1.1rem 1rem;font-weight:600;text-transform:uppercase;letter-spacing:.03em}
-.shirts{max-width:1280px;margin:0 auto;padding:2rem 1rem}
+.catalog{max-width:1280px;margin:0 auto;padding:0 1rem 2rem}
 .grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
 .tile{display:flex;flex-direction:column}
 .tile-img{display:block;position:relative;width:100%;padding:0;margin:0;border:2px solid var(--black);border-radius:0;aspect-ratio:1;overflow:hidden;background:#C8A97E;cursor:pointer;font:inherit}
 .tile-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transition:opacity .35s ease}
 .tile-img .img-shirt{opacity:0}
 .tile-img.revealed .img-shirt{opacity:1}
-.tile-img::after{content:"SHIRT";position:absolute;top:12px;right:-26px;width:84px;padding:2px 0;background:#C8562A;color:var(--cream);font-family:Oswald,sans-serif;font-weight:700;font-size:.7rem;line-height:1.2;letter-spacing:.14em;text-align:center;text-transform:uppercase;transform:rotate(45deg);pointer-events:none;z-index:2}
+.tile-img::after{content:attr(data-ribbon);position:absolute;top:12px;right:-26px;width:84px;padding:2px 0;background:#C8562A;color:var(--cream);font-family:Oswald,sans-serif;font-weight:700;font-size:.7rem;line-height:1.2;letter-spacing:.14em;text-align:center;text-transform:uppercase;transform:rotate(45deg);pointer-events:none;z-index:2}
 .tile-img:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
 @media(hover:hover) and (pointer:fine){.tile-img:hover .img-shirt{opacity:1}}
 .tile h3{font-size:1.05rem;font-weight:600;margin-top:.6rem}
@@ -49,7 +49,7 @@ a{color:inherit}
 }
 @media(min-width:1100px){
   .grid{grid-template-columns:repeat(4,1fr)}
-  .shirts{padding:3rem 2rem}
+  .catalog{padding:0 2rem 3rem}
 }
 @media(min-width:1300px){
   .hero{flex-direction:row;justify-content:space-between;align-items:center;text-align:left;padding:2rem 3rem;min-height:480px;background:url(assets/shop-banner-1800x600.jpg) center/cover}
@@ -57,4 +57,23 @@ a{color:inherit}
   .hero-text h1{font-size:clamp(2.2rem,5vw,5rem)}
   .hero-text .sub{font-size:clamp(1.2rem,2.8vw,3.2rem)}
 }
+.cat-bar{display:flex;flex-direction:column;align-items:center;gap:.6rem;padding:1.5rem 0 1.25rem}
+.tabs{display:flex;width:100%;max-width:640px;border:2px solid var(--black);background:var(--cream);box-shadow:4px 4px 0 var(--black)}
+.tabs [role=tab]{flex:1 1 0;min-width:0;margin:0;padding:.7rem .25rem;border:0;border-right:2px solid var(--black);border-radius:0;background:var(--cream);color:var(--black);font-family:Oswald,sans-serif;font-weight:700;font-size:1rem;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+.tabs [role=tab]:last-child{border-right:0}
+.tabs [role=tab]:hover{background:var(--tan);color:var(--orange)}
+.tabs [role=tab][aria-selected=true]{background:var(--orange);color:var(--cream)}
+.tabs [role=tab]:focus-visible{outline:3px solid var(--black);outline-offset:-6px}
+.tabs [role=tab][aria-selected=true]:focus-visible{outline-color:var(--cream)}
+.cat-count{margin:0;font-family:Oswald,sans-serif;font-weight:500;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase}
+.soon-banner{margin:0 0 1.25rem;padding:.8rem 1rem;border:2px solid var(--black);background:var(--black);color:var(--cream);text-align:center;font-size:1.1rem}
+.soon-banner strong{font-family:Oswald,sans-serif;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--tan)}
+.soon-banner[hidden],.tile[hidden]{display:none}
+.tile-soon .tile-img{cursor:default}
+.tile-soon .tile-img img{filter:grayscale(.25)}
+.soon-pill{align-self:flex-start;display:inline-block;padding:.35rem .9rem;border:2px solid var(--black);border-radius:4px;background:var(--cream);color:var(--black);font-family:Oswald,sans-serif;font-weight:600;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase}
+.tile-soon .tile-img{display:block;position:relative;width:100%;border:2px solid var(--black);aspect-ratio:1;overflow:hidden;background:#C8A97E}
+#catalog-panel:focus{outline:none}
+@media(min-width:700px){.tabs [role=tab]{font-size:1.2rem;padding:.8rem .5rem}}
+@media(max-width:520px){.site-header nav{gap:.8rem;font-size:.95rem}.logo img{height:40px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.tile-img img{transition:none}}
