@@ -1,0 +1,37 @@
+name: Promote approved site to main
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+      - name: Copy approved tree onto main and remove this workflow
+        run: |
+          set -euo pipefail
+          SRC=173701382f3bac25e0a9570e64dda3a9f9a56917
+          git fetch origin "$SRC"
+          git checkout "$SRC" -- .
+          rm -rf .github
+          git add -A
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 1
+          fi
+          git commit -m "$(cat <<'MSG'
+Add category tabs, hoodies, coming-soon hats, and updated tee colors
+
+Publish the approved dadcorpshirts.com preview: All/Shirts/Hoodies/Hats
+filters, five live hoodie tiles, unpublished hats marked Coming Soon,
+refreshed tee mockups, and the new color counts (8, 7 for Measure Once,
+6 for I'm Not Sleeping).
+MSG
+)"
+          git push origin HEAD:main
