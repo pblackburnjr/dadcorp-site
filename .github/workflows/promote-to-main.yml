@@ -1,6 +1,6 @@
 name: Promote approved site to main
 on:
-  workflow_dispatch:
+  workflow_dispatch: {}
 permissions:
   contents: write
 jobs:
@@ -25,13 +25,5 @@ jobs:
             echo "No changes to commit"
             exit 1
           fi
-          git commit -m "$(cat <<'MSG'
-Add category tabs, hoodies, coming-soon hats, and updated tee colors
-
-Publish the approved dadcorpshirts.com preview: All/Shirts/Hoodies/Hats
-filters, five live hoodie tiles, unpublished hats marked Coming Soon,
-refreshed tee mockups, and the new color counts (8, 7 for Measure Once,
-6 for I'm Not Sleeping).
-MSG
-)"
+          git commit -m "Add category tabs, hoodies, coming-soon hats, and updated tee colors"
           git push origin HEAD:main
