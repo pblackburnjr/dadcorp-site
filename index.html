@@ -36,20 +36,79 @@
     <section id="catalog" class="catalog">
       <div class="cat-bar" id="category-bar">
         <div class="tabs" role="tablist" aria-label="Product categories">
-          <button type="button" role="tab" id="tab-all" data-tab="all" aria-selected="true" aria-controls="catalog-panel" tabindex="0">All</button>
+          <button type="button" role="tab" id="tab-designs" data-tab="designs" aria-selected="true" aria-controls="catalog-panel" tabindex="0">Designs</button>
           <button type="button" role="tab" id="tab-shirts" data-tab="shirts" aria-selected="false" aria-controls="catalog-panel" tabindex="-1">Shirts</button>
           <button type="button" role="tab" id="tab-hoodies" data-tab="hoodies" aria-selected="false" aria-controls="catalog-panel" tabindex="-1">Hoodies</button>
           <button type="button" role="tab" id="tab-hats" data-tab="hats" aria-selected="false" aria-controls="catalog-panel" tabindex="-1">Hats</button>
+          <button type="button" role="tab" id="tab-all" data-tab="all" aria-selected="false" aria-controls="catalog-panel" tabindex="-1">All</button>
         </div>
         <p class="cat-count" id="cat-count" aria-live="polite"></p>
       </div>
-      <p class="soon-banner" id="soon-banner" hidden><strong>Hats — Coming Soon.</strong> Richardson trucker caps are on the way. Check back soon.</p>
-      <div id="catalog-panel" role="tabpanel" aria-labelledby="tab-all" tabindex="-1">
+      <div id="catalog-panel" role="tabpanel" aria-labelledby="tab-designs" tabindex="-1">
       <ul class="grid">
+        <li class="tile" data-cat="designs">
+          <button type="button" class="tile-img" data-href="https://shop.dadcorpshirts.com/product/34908665" aria-label="Bank of Dad design">
+            <img class="img-design" src="assets/designs/bank-of-dad.jpg" alt="Bank of Dad design artwork" width="1200" height="1200">
+          </button>
+          <h3>Bank of Dad</h3>
+        </li>
+        <li class="tile" data-cat="designs">
+          <button type="button" class="tile-img" data-href="https://shop.dadcorpshirts.com/product/34908583" aria-label="I'm Not Sleeping design">
+            <img class="img-design" src="assets/designs/im-not-sleeping.jpg" alt="I'm Not Sleeping design artwork" width="1200" height="1200">
+          </button>
+          <h3>I'm Not Sleeping</h3>
+        </li>
+        <li class="tile" data-cat="designs">
+          <button type="button" class="tile-img" data-href="https://shop.dadcorpshirts.com/product/34908636" aria-label="Ask Your Mother design">
+            <img class="img-design" src="assets/designs/ask-your-mother.jpg" alt="Ask Your Mother design artwork" width="1200" height="1200">
+          </button>
+          <h3>Ask Your Mother</h3>
+        </li>
+        <li class="tile" data-cat="designs">
+          <button type="button" class="tile-img" data-href="https://shop.dadcorpshirts.com/product/34908657" aria-label="If I Can't Fix It design">
+            <img class="img-design" src="assets/designs/if-i-cant-fix-it.jpg" alt="If I Can't Fix It design artwork" width="1200" height="1200">
+          </button>
+          <h3>If I Can't Fix It</h3>
+        </li>
+        <li class="tile" data-cat="designs">
+          <button type="button" class="tile-img" data-href="https://shop.dadcorpshirts.com/product/34908647" aria-label="Measure Once, Cuss Twice design">
+            <img class="img-design" src="assets/designs/measure-once-cuss-twice.jpg" alt="Measure Once, Cuss Twice design artwork" width="1200" height="1200" loading="lazy">
+          </button>
+          <h3>Measure Once, Cuss Twice</h3>
+        </li>
+        <li class="tile" data-cat="designs">
+          <button type="button" class="tile-img" data-href="https://shop.dadcorpshirts.com/product/34908639" aria-label="Rule #1 design">
+            <img class="img-design" src="assets/designs/rule-1.jpg" alt="Rule #1 design artwork" width="1200" height="1200" loading="lazy">
+          </button>
+          <h3>Rule #1</h3>
+        </li>
+        <li class="tile" data-cat="designs">
+          <button type="button" class="tile-img" data-href="https://shop.dadcorpshirts.com/product/34908630" aria-label="Detour design">
+            <img class="img-design" src="assets/designs/detour.jpg" alt="Detour design artwork" width="1200" height="1200" loading="lazy">
+          </button>
+          <h3>Detour</h3>
+        </li>
+        <li class="tile" data-cat="designs">
+          <button type="button" class="tile-img" data-href="https://shop.dadcorpshirts.com/product/34908624" aria-label="Unsubscribed design">
+            <img class="img-design" src="assets/designs/unsubscribed.jpg" alt="Unsubscribed design artwork" width="1200" height="1200" loading="lazy">
+          </button>
+          <h3>Unsubscribed</h3>
+        </li>
+        <li class="tile" data-cat="designs">
+          <button type="button" class="tile-img" data-href="https://shop.dadcorpshirts.com/product/34908615" aria-label="Grandma's House design">
+            <img class="img-design" src="assets/designs/grandmas-house.jpg" alt="Grandma's House design artwork" width="1200" height="1200" loading="lazy">
+          </button>
+          <h3>Grandma's House</h3>
+        </li>
+        <li class="tile" data-cat="designs">
+          <button type="button" class="tile-img" data-href="https://shop.dadcorpshirts.com/product/34908606" aria-label="GiGi design">
+            <img class="img-design" src="assets/designs/gigi.jpg" alt="GiGi design artwork" width="1200" height="1200" loading="lazy">
+          </button>
+          <h3>GiGi</h3>
+        </li>
         <li class="tile" data-cat="shirts">
           <button type="button" class="tile-img" data-ribbon="SHIRT" data-href="https://shop.dadcorpshirts.com/product/34908665" aria-label="Bank of Dad - Pay Your Old Man Back T-Shirt">
-            <img class="img-design" src="assets/designs/bank-of-dad.jpg" alt="Bank of Dad - Pay Your Old Man Back T-Shirt" width="1200" height="1200">
-            <img class="img-shirt" src="assets/shirts/bank-of-dad.jpg" alt="Bank of Dad - Pay Your Old Man Back T-Shirt (shirt mockup)">
+            <img class="img-design" src="assets/shirts/bank-of-dad.jpg" alt="Bank of Dad - Pay Your Old Man Back T-Shirt" width="1200" height="1200" loading="lazy">
           </button>
           <h3>Bank of Dad</h3>
           <p class="price">$29.99</p>
@@ -58,8 +117,7 @@
         </li>
         <li class="tile" data-cat="shirts">
           <button type="button" class="tile-img" data-ribbon="SHIRT" data-href="https://shop.dadcorpshirts.com/product/34908583" aria-label="I'm Not Sleeping, I'm Watching TV - Dad Mode Activated T-Shirt">
-            <img class="img-design" src="assets/designs/im-not-sleeping.jpg" alt="I'm Not Sleeping, I'm Watching TV - Dad Mode Activated T-Shirt" width="1200" height="1200">
-            <img class="img-shirt" src="assets/shirts/im-not-sleeping.jpg" alt="I'm Not Sleeping, I'm Watching TV - Dad Mode Activated T-Shirt (shirt mockup)">
+            <img class="img-design" src="assets/shirts/im-not-sleeping.jpg" alt="I'm Not Sleeping, I'm Watching TV - Dad Mode Activated T-Shirt" width="1200" height="1200" loading="lazy">
           </button>
           <h3>I'm Not Sleeping</h3>
           <p class="price">$29.99</p>
@@ -68,8 +126,7 @@
         </li>
         <li class="tile" data-cat="shirts">
           <button type="button" class="tile-img" data-ribbon="SHIRT" data-href="https://shop.dadcorpshirts.com/product/34908636" aria-label="Ask Your Mother - Dad's Customer Service Is Closed T-Shirt">
-            <img class="img-design" src="assets/designs/ask-your-mother.jpg" alt="Ask Your Mother - Dad's Customer Service Is Closed T-Shirt" width="1200" height="1200">
-            <img class="img-shirt" src="assets/shirts/ask-your-mother.jpg" alt="Ask Your Mother - Dad's Customer Service Is Closed T-Shirt (shirt mockup)">
+            <img class="img-design" src="assets/shirts/ask-your-mother.jpg" alt="Ask Your Mother - Dad's Customer Service Is Closed T-Shirt" width="1200" height="1200" loading="lazy">
           </button>
           <h3>Ask Your Mother</h3>
           <p class="price">$29.99</p>
@@ -78,8 +135,7 @@
         </li>
         <li class="tile" data-cat="shirts">
           <button type="button" class="tile-img" data-ribbon="SHIRT" data-href="https://shop.dadcorpshirts.com/product/34908657" aria-label="If I Can't Fix It, It Was Already Broken T-Shirt">
-            <img class="img-design" src="assets/designs/if-i-cant-fix-it.jpg" alt="If I Can't Fix It, It Was Already Broken T-Shirt" width="1200" height="1200">
-            <img class="img-shirt" src="assets/shirts/if-i-cant-fix-it.jpg" alt="If I Can't Fix It, It Was Already Broken T-Shirt (shirt mockup)">
+            <img class="img-design" src="assets/shirts/if-i-cant-fix-it.jpg" alt="If I Can't Fix It, It Was Already Broken T-Shirt" width="1200" height="1200" loading="lazy">
           </button>
           <h3>If I Can't Fix It</h3>
           <p class="price">$29.99</p>
@@ -88,8 +144,7 @@
         </li>
         <li class="tile" data-cat="shirts">
           <button type="button" class="tile-img" data-ribbon="SHIRT" data-href="https://shop.dadcorpshirts.com/product/34908647" aria-label="Measure Once, Cuss Twice T-Shirt">
-            <img class="img-design" src="assets/designs/measure-once-cuss-twice.jpg" alt="Measure Once, Cuss Twice T-Shirt" width="1200" height="1200" loading="lazy">
-            <img class="img-shirt" src="assets/shirts/measure-once-cuss-twice.jpg" alt="Measure Once, Cuss Twice T-Shirt (shirt mockup)" loading="lazy">
+            <img class="img-design" src="assets/shirts/measure-once-cuss-twice.jpg" alt="Measure Once, Cuss Twice T-Shirt" width="1200" height="1200" loading="lazy">
           </button>
           <h3>Measure Once, Cuss Twice</h3>
           <p class="price">$29.99</p>
@@ -98,8 +153,7 @@
         </li>
         <li class="tile" data-cat="shirts">
           <button type="button" class="tile-img" data-ribbon="SHIRT" data-href="https://shop.dadcorpshirts.com/product/34908639" aria-label="Rule #1 T-Shirt">
-            <img class="img-design" src="assets/designs/rule-1.jpg" alt="Rule #1 T-Shirt" width="1200" height="1200" loading="lazy">
-            <img class="img-shirt" src="assets/shirts/rule-1.jpg" alt="Rule #1 T-Shirt (shirt mockup)" loading="lazy">
+            <img class="img-design" src="assets/shirts/rule-1.jpg" alt="Rule #1 T-Shirt" width="1200" height="1200" loading="lazy">
           </button>
           <h3>Rule #1</h3>
           <p class="price">$29.99</p>
@@ -108,8 +162,7 @@
         </li>
         <li class="tile" data-cat="shirts">
           <button type="button" class="tile-img" data-ribbon="SHIRT" data-href="https://shop.dadcorpshirts.com/product/34908630" aria-label="Detour T-Shirt">
-            <img class="img-design" src="assets/designs/detour.jpg" alt="Detour T-Shirt" width="1200" height="1200" loading="lazy">
-            <img class="img-shirt" src="assets/shirts/detour.jpg" alt="Detour T-Shirt (shirt mockup)" loading="lazy">
+            <img class="img-design" src="assets/shirts/detour.jpg" alt="Detour T-Shirt" width="1200" height="1200" loading="lazy">
           </button>
           <h3>Detour</h3>
           <p class="price">$29.99</p>
@@ -118,8 +171,7 @@
         </li>
         <li class="tile" data-cat="shirts">
           <button type="button" class="tile-img" data-ribbon="SHIRT" data-href="https://shop.dadcorpshirts.com/product/34908624" aria-label="Unsubscribed T-Shirt">
-            <img class="img-design" src="assets/designs/unsubscribed.jpg" alt="Unsubscribed T-Shirt" width="1200" height="1200" loading="lazy">
-            <img class="img-shirt" src="assets/shirts/unsubscribed.jpg" alt="Unsubscribed T-Shirt (shirt mockup)" loading="lazy">
+            <img class="img-design" src="assets/shirts/unsubscribed.jpg" alt="Unsubscribed T-Shirt" width="1200" height="1200" loading="lazy">
           </button>
           <h3>Unsubscribed</h3>
           <p class="price">$29.99</p>
@@ -128,8 +180,7 @@
         </li>
         <li class="tile" data-cat="shirts">
           <button type="button" class="tile-img" data-ribbon="SHIRT" data-href="https://shop.dadcorpshirts.com/product/34908615" aria-label="Grandma's House T-Shirt">
-            <img class="img-design" src="assets/designs/grandmas-house.jpg" alt="Grandma's House T-Shirt" width="1200" height="1200" loading="lazy">
-            <img class="img-shirt" src="assets/shirts/grandmas-house.jpg" alt="Grandma's House T-Shirt (shirt mockup)" loading="lazy">
+            <img class="img-design" src="assets/shirts/grandmas-house.jpg" alt="Grandma's House T-Shirt" width="1200" height="1200" loading="lazy">
           </button>
           <h3>Grandma's House</h3>
           <p class="price">$29.99</p>
@@ -138,8 +189,7 @@
         </li>
         <li class="tile" data-cat="shirts">
           <button type="button" class="tile-img" data-ribbon="SHIRT" data-href="https://shop.dadcorpshirts.com/product/34908606" aria-label="GiGi T-Shirt">
-            <img class="img-design" src="assets/designs/gigi.jpg" alt="GiGi T-Shirt" width="1200" height="1200" loading="lazy">
-            <img class="img-shirt" src="assets/shirts/gigi.jpg" alt="GiGi T-Shirt (shirt mockup)" loading="lazy">
+            <img class="img-design" src="assets/shirts/gigi.jpg" alt="GiGi T-Shirt" width="1200" height="1200" loading="lazy">
           </button>
           <h3>GiGi</h3>
           <p class="price">$29.99</p>
@@ -191,29 +241,32 @@
           <p class="details">S–3XL · 2 colors</p>
           <a class="btn btn-sm" href="https://shop.dadcorpshirts.com/product/35003322">Buy</a>
         </li>
-        <li class="tile tile-soon" data-cat="hats">
-          <div class="tile-img" data-ribbon="SOON">
-            <img class="img-design" src="assets/hats/richardson-112-embroidered.jpg" alt="Bank of Dad Embroidered Trucker (coming soon)" width="1200" height="1200" loading="lazy">
-          </div>
-          <h3>Bank of Dad Embroidered Trucker</h3>
-          <p class="details">Richardson 112 · Embroidered</p>
-          <span class="soon-pill">Coming Soon</span>
+        <li class="tile" data-cat="hats">
+          <button type="button" class="tile-img" data-ribbon="HAT" data-href="https://shop.dadcorpshirts.com/product/35007433" aria-label="Bank of Dad 7-Panel Trucker Cap">
+            <img class="img-design" src="assets/hats/bank-of-dad-7-panel-trucker-cap.jpg" alt="Bank of Dad 7-Panel Trucker Cap" width="1200" height="1200" loading="lazy">
+          </button>
+          <h3>Bank of Dad 7-Panel Trucker Cap</h3>
+          <p class="price">$32.99</p>
+          <p class="details">Richardson 168</p>
+          <a class="btn btn-sm" href="https://shop.dadcorpshirts.com/product/35007433">Buy</a>
         </li>
-        <li class="tile tile-soon" data-cat="hats">
-          <div class="tile-img" data-ribbon="SOON">
-            <img class="img-design" src="assets/hats/richardson-168-patch.jpg" alt="Bank of Dad 7-Panel Patch Trucker (coming soon)" width="1200" height="1200" loading="lazy">
-          </div>
-          <h3>Bank of Dad 7-Panel Patch Trucker</h3>
-          <p class="details">Richardson 168 · Patch-Style</p>
-          <span class="soon-pill">Coming Soon</span>
-        </li>
-        <li class="tile tile-soon" data-cat="hats">
-          <div class="tile-img" data-ribbon="SOON">
-            <img class="img-design" src="assets/hats/richardson-168p-camo.jpg" alt="Bank of Dad 7-Panel Camo Trucker (coming soon)" width="1200" height="1200" loading="lazy">
-          </div>
-          <h3>Bank of Dad 7-Panel Camo Trucker</h3>
+        <li class="tile" data-cat="hats">
+          <button type="button" class="tile-img" data-ribbon="HAT" data-href="https://shop.dadcorpshirts.com/product/35007436" aria-label="Bank of Dad 7-Panel Camo Trucker Cap">
+            <img class="img-design" src="assets/hats/bank-of-dad-7-panel-camo-trucker-cap.jpg" alt="Bank of Dad 7-Panel Camo Trucker Cap" width="1200" height="1200" loading="lazy">
+          </button>
+          <h3>Bank of Dad 7-Panel Camo Trucker Cap</h3>
+          <p class="price">$34.99</p>
           <p class="details">Richardson 168P · Camo</p>
-          <span class="soon-pill">Coming Soon</span>
+          <a class="btn btn-sm" href="https://shop.dadcorpshirts.com/product/35007436">Buy</a>
+        </li>
+        <li class="tile" data-cat="hats">
+          <button type="button" class="tile-img" data-ribbon="HAT" data-href="https://shop.dadcorpshirts.com/product/35007441" aria-label="Bank of Dad Embroidered Trucker Cap">
+            <img class="img-design" src="assets/hats/bank-of-dad-embroidered-trucker-cap.jpg" alt="Bank of Dad Embroidered Trucker Cap" width="1200" height="1200" loading="lazy">
+          </button>
+          <h3>Bank of Dad Embroidered Trucker Cap</h3>
+          <p class="price">$32.99</p>
+          <p class="details">Richardson 112 · Embroidered</p>
+          <a class="btn btn-sm" href="https://shop.dadcorpshirts.com/product/35007441">Buy</a>
         </li>
       </ul>
       </div>

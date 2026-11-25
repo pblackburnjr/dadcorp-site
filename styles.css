@@ -27,6 +27,7 @@ a{color:inherit}
 .tile-img .img-shirt{opacity:0}
 .tile-img.revealed .img-shirt{opacity:1}
 .tile-img::after{content:attr(data-ribbon);position:absolute;top:12px;right:-26px;width:84px;padding:2px 0;background:#C8562A;color:var(--cream);font-family:Oswald,sans-serif;font-weight:700;font-size:.7rem;line-height:1.2;letter-spacing:.14em;text-align:center;text-transform:uppercase;transform:rotate(45deg);pointer-events:none;z-index:2}
+.tile-img:not([data-ribbon])::after{display:none}
 .tile-img:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
 @media(hover:hover) and (pointer:fine){.tile-img:hover .img-shirt{opacity:1}}
 .tile h3{font-size:1.05rem;font-weight:600;margin-top:.6rem}
