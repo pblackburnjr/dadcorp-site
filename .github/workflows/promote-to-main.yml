@@ -1,0 +1,42 @@
+name: Promote approved site to main
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+      - name: Copy approved tree onto main and remove this workflow
+        run: |
+          set -euo pipefail
+          SRC=f93122b2960955025e0c949376ec2116a06e922a
+          git fetch origin "$SRC"
+          git checkout "$SRC" -- .
+          mapfile -t files < <(find . -type f -name '*.b64' | sort)
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "Expected hat image helpers were missing"
+            exit 1
+          fi
+          for f in "${files[@]}"; do
+            out="${f%.b64}"
+            mkdir -p "$(dirname "$out")"
+            base64 -d "$f" > "$out"
+            rm -f "$f"
+            echo "decoded $out"
+          done
+          rm -rf .github
+          find . -type f -name '*.b64' -delete
+          git add -A
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 1
+          fi
+          git commit -m "Order catalog as Designs, Shirts, Hoodies, Hats, All"
+          git push origin HEAD:main
