@@ -32,6 +32,8 @@ a{color:inherit}
 @media(hover:hover) and (pointer:fine){.tile-img:hover .img-shirt{opacity:1}}
 .tile h3{font-size:1.05rem;font-weight:600;margin-top:.6rem}
 .price{margin:.1rem 0 .5rem;color:var(--orange);font-weight:600}
+.price s{color:#6b5a48;font-weight:400;font-size:.9em}
+.sale-label{display:inline-block;margin-left:.2rem;padding:0 .4rem;border:1px solid var(--orange);border-radius:3px;font-size:.7rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;vertical-align:middle;line-height:1.4}
 .details{margin:0 0 .5rem;font-size:.95rem;font-weight:500;line-height:1.2}
 .btn-sm{align-self:flex-start;padding:.4rem 1.2rem;font-size:.95rem}
 .about{background:var(--black);color:var(--cream);padding:3rem 1rem}
