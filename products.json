@@ -190,31 +190,37 @@
   ],
   "hats": [
     {
-      "id": "richardson-112-embroidered",
+      "id": "bank-of-dad-7-panel-trucker-cap",
       "category": "hats",
-      "title": "Bank of Dad Embroidered Trucker",
-      "display_title": "Bank of Dad Embroidered Trucker",
-      "status": "coming_soon",
-      "image": "assets/hats/richardson-112-embroidered.jpg",
-      "details": "Richardson 112 \u00b7 Embroidered"
+      "title": "Bank of Dad 7-Panel Trucker Cap",
+      "display_title": "Bank of Dad 7-Panel Trucker Cap",
+      "price": "$32.99",
+      "status": "live",
+      "image": "assets/hats/bank-of-dad-7-panel-trucker-cap.jpg",
+      "buy_url": "https://shop.dadcorpshirts.com/product/35007433",
+      "details": "Richardson 168"
     },
     {
-      "id": "richardson-168-patch",
+      "id": "bank-of-dad-7-panel-camo-trucker-cap",
       "category": "hats",
-      "title": "Bank of Dad 7-Panel Patch Trucker",
-      "display_title": "Bank of Dad 7-Panel Patch Trucker",
-      "status": "coming_soon",
-      "image": "assets/hats/richardson-168-patch.jpg",
-      "details": "Richardson 168 \u00b7 Patch-Style"
-    },
-    {
-      "id": "richardson-168p-camo",
-      "category": "hats",
-      "title": "Bank of Dad 7-Panel Camo Trucker",
-      "display_title": "Bank of Dad 7-Panel Camo Trucker",
-      "status": "coming_soon",
-      "image": "assets/hats/richardson-168p-camo.jpg",
+      "title": "Bank of Dad 7-Panel Camo Trucker Cap",
+      "display_title": "Bank of Dad 7-Panel Camo Trucker Cap",
+      "price": "$34.99",
+      "status": "live",
+      "image": "assets/hats/bank-of-dad-7-panel-camo-trucker-cap.jpg",
+      "buy_url": "https://shop.dadcorpshirts.com/product/35007436",
       "details": "Richardson 168P \u00b7 Camo"
+    },
+    {
+      "id": "bank-of-dad-embroidered-trucker-cap",
+      "category": "hats",
+      "title": "Bank of Dad Embroidered Trucker Cap",
+      "display_title": "Bank of Dad Embroidered Trucker Cap",
+      "price": "$32.99",
+      "status": "live",
+      "image": "assets/hats/bank-of-dad-embroidered-trucker-cap.jpg",
+      "buy_url": "https://shop.dadcorpshirts.com/product/35007441",
+      "details": "Richardson 112 \u00b7 Embroidered"
     }
   ]
 }
